@@ -1,9 +1,4 @@
 // Desafio 1
-
-let x = true;
-let y = true;
-let z = false;
-
 function compareTrue(value1, value2) {
   if (value1 && value2) {
     return true;
@@ -12,12 +7,10 @@ function compareTrue(value1, value2) {
   }
 }
 
-console.log(compareTrue(x,z))
-
-
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, height) {
+  area = (base*height)/2;
+  return area;
 }
 
 // Desafio 3
