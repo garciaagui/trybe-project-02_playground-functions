@@ -74,8 +74,6 @@ function catAndMouse(mouse, cat1, cat2) {
 
 }
 
-let x = [2, 15, 7, 9, 45]
-
 // Desafio 8
 function fizzBuzz(numbersArray) {
 
@@ -100,13 +98,47 @@ function fizzBuzz(numbersArray) {
    return stringsArrays;
 }
 
-console.log(fizzBuzz(x))
-
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(decodedPhrase) {
+
+  let codedPhrase = '';
+
+  for (let word in decodedPhrase) {
+
+    let auxiliar = decodedPhrase[word];
+
+    switch(auxiliar) {
+
+      case 'a':
+        auxiliar = 1;
+        break;
+      
+      case 'e':
+        auxiliar = 2;
+        break;
+  
+      case 'i':
+        auxiliar = 3;
+        break;
+  
+      case 'o':
+        auxiliar = 4;
+        break;
+  
+      case 'u':
+        auxiliar = 5;
+        break;
+  
+      default:
+    }
+
+    codedPhrase += auxiliar;
+  }
+  
+  return codedPhrase;
 }
-function decode() {
+
+function decode(codedPhrase) {
   // seu código aqui
 }
 
