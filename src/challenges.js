@@ -9,13 +9,13 @@ function compareTrue(value1, value2) {
 
 // Desafio 2
 function calcArea(base, height) {
-  area = (base*height)/2;
+  let area = (base*height)/2;
   return area;
 }
 
 // Desafio 3
 function splitSentence(text) {
-  splitText = text.split(" ");
+  let splitText = text.split(" ");
   return splitText;
 }
 
