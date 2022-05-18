@@ -139,7 +139,43 @@ function encode(decodedPhrase) {
 }
 
 function decode(codedPhrase) {
-  // seu código aqui
+
+  let decodedPhrase = '';
+
+  for (let word in codedPhrase) {
+
+    let auxiliar = codedPhrase[word];
+
+    switch(auxiliar) {
+
+      case '1':
+        auxiliar = 'a';
+        break;
+      
+      case '2':
+        auxiliar = 'e';
+        break;
+  
+      case '3':
+        auxiliar = 'i';
+        break;
+  
+      case '4':
+        auxiliar = 'o';
+        break;
+  
+      case '5':
+        auxiliar = 'u';
+        break;
+  
+      default:
+    }
+
+    decodedPhrase += auxiliar;
+  }
+  
+  return decodedPhrase;
+
 }
 
 // Desafio 10
