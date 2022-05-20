@@ -175,13 +175,31 @@ function decode(codedPhrase) {
   }
   
   return decodedPhrase;
-
 }
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(techListArray, personName) {
+
+  if (techListArray.length === 0 || personName === 0) {
+    return 'Vazio!';
+
+  } else {
+
+    techListArray = techListArray.sort()
+    let techPerson = [];
+
+    for (let key in techListArray) {
+
+      techPerson.push({
+        tech: techListArray[key],
+        name: personName,
+      })
+
+    }
+    return techPerson;
+  }
 }
+
 
 module.exports = {
   calcArea,
