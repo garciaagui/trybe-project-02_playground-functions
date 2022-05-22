@@ -43,146 +43,73 @@ function highestCount(numbersArray) {
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-
   let distance1 = Math.abs(mouse - cat1);
   let distance2 = Math.abs(mouse - cat2);
-
-  if (distance1 < distance2) {
-    return 'cat1';
-  } else if (distance2 < distance1) {
-    return 'cat2';
-  } else {
-    return 'os gatos trombam e o rato foge';
-  }
-
+  if (distance1 < distance2) return 'cat1';
+  if (distance2 < distance1) return 'cat2';
+  return 'os gatos trombam e o rato foge';
 }
 
 // Desafio 8
 function fizzBuzz(numbersArray) {
-
-  let stringsArrays = []
-
+  let stringsArrays = [];
   for (let index in numbersArray) {
-
-    if (numbersArray[index]%3 === 0 && numbersArray[index]% 5 === 0) {
-      stringsArrays.push('fizzBuzz');
-
-    } else if (numbersArray[index]%3 === 0) {
-    stringsArrays.push('fizz');
-
-    } else if (numbersArray[index]%5 === 0) {
-      stringsArrays.push('buzz');
-
-    } else {
-      stringsArrays.push('bug!');
-
-     }
+    if (numbersArray[index] % 3 === 0 && numbersArray[index] % 5 === 0) stringsArrays.push('fizzBuzz');
+    else if (numbersArray[index] % 3 === 0) stringsArrays.push('fizz');
+    else if (numbersArray[index] % 5 === 0) stringsArrays.push('buzz');
+    else stringsArrays.push('bug!');
   }
-   return stringsArrays;
+  return stringsArrays;
 }
 
 // Desafio 9
 function encode(decodedPhrase) {
-
-  let codedPhrase = '';
-
-  for (let word in decodedPhrase) {
-
-    let auxiliar = decodedPhrase[word];
-
-    switch(auxiliar) {
-
-      case 'a':
-        auxiliar = 1;
-        break;
-      
-      case 'e':
-        auxiliar = 2;
-        break;
-  
-      case 'i':
-        auxiliar = 3;
-        break;
-  
-      case 'o':
-        auxiliar = 4;
-        break;
-  
-      case 'u':
-        auxiliar = 5;
-        break;
-  
-      default:
+  let coded = '';
+  for (let i = 0; i < decodedPhrase.length; i += 1) {
+    let auxiliar = decodedPhrase[i];
+    switch (auxiliar) {
+    case 'a': auxiliar = 1; break;
+    case 'e': auxiliar = 2; break;
+    case 'i': auxiliar = 3; break;
+    case 'o': auxiliar = 4; break;
+    case 'u': auxiliar = 5; break;
+    default:
     }
-
-    codedPhrase += auxiliar;
+    coded += auxiliar;
   }
-  
-  return codedPhrase;
+  return coded;
 }
 
 function decode(codedPhrase) {
-
-  let decodedPhrase = '';
-
-  for (let word in codedPhrase) {
-
-    let auxiliar = codedPhrase[word];
-
-    switch(auxiliar) {
-
-      case '1':
-        auxiliar = 'a';
-        break;
-      
-      case '2':
-        auxiliar = 'e';
-        break;
-  
-      case '3':
-        auxiliar = 'i';
-        break;
-  
-      case '4':
-        auxiliar = 'o';
-        break;
-  
-      case '5':
-        auxiliar = 'u';
-        break;
-  
-      default:
+  let decoded = '';
+  for (let i = 0; i < codedPhrase.length; i += 1) {
+    let auxiliar = codedPhrase[i];
+    switch (auxiliar) {
+    case '1': auxiliar = 'a'; break;
+    case '2': auxiliar = 'e'; break;
+    case '3': auxiliar = 'i'; break;
+    case '4': auxiliar = 'o'; break;
+    case '5': auxiliar = 'u'; break;
+    default:
     }
-
-    decodedPhrase += auxiliar;
+    decoded += auxiliar;
   }
-  
-  return decodedPhrase;
+  return decoded;
 }
 
 // Desafio 10
 function techList(techListArray, personName) {
-
-  if (techListArray.length === 0 || personName === 0) {
-    return 'Vazio!';
-
-  } else {
-
-    techListArray = techListArray.sort()
-    let techPerson = [];
-
-    for (let key in techListArray) {
-
-      techPerson.push({
-        tech: techListArray[key],
-        name: personName,
-      })
-
-    }
-    return techPerson;
+  if (techListArray.length === 0 || personName === 0) return 'Vazio!';
+  techListArray = techListArray.sort();
+  let techPerson = [];
+  for (let i = 0; i < techListArray.length; i += 1) {
+    techPerson.push({
+      tech: techListArray[i],
+      name: personName,
+    });
   }
+  return techPerson;
 }
-
 
 module.exports = {
   calcArea,
