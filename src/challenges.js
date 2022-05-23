@@ -35,7 +35,10 @@ function highestCount(numbersArray) {
   let biggestNumber = numbersArray[0];
   let repeats = 0;
   for (let index = 0; index < numbersArray.length; index += 1) {
-    if (numbersArray[index] > biggestNumber) biggestNumber = numbersArray[index];
+    if (numbersArray[index] > biggestNumber) {
+      biggestNumber = numbersArray[index];
+      repeats = 0;
+    }
     if (numbersArray[index] === biggestNumber) repeats += 1;
   }
   return repeats;
