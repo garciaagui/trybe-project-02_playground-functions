@@ -20,19 +20,19 @@ Projeto 02 do curso de Desenvolvimento Web da [Trybe](https://www.betrybe.com/).
 Este projeto se trata da implementação de funções para resolução de problemas com respostas pré-determinadas. Utiliza-se a lógica de programação para análise de cada problema e resposta esperada, facilitando a implementação do código de cada uma das funções.
 
 Descrição de cada função (desafio):
-1. **compareTrue**: Utiliza o operador lógico `&&` para comparação de dois valores.
-2. **calcArea**: Calcula a área total de um triângulo.
-3. **splitSentence**: Divide uma frase de acordo com a quantidade de palavras.
-4. **concatName**: Retorna uma string que contém o último e primeiro itens (nesta sequência) de um array de strings.
-5. **footballPoints**: Calcula a quantidade de pontos em um campeonato de futebol.
-6. **highestCount**: Retorna o número de repetições do maior número de um array de números.
-7. **catAndMouse**: Verifica qual gato está mais perto do rato.
-8. **fizzBuzz**:  Retorna um array de strings de acordo com o array de números recebido.
-9. **encode** e **decode**: Codifica e decodifica uma frase, trocando vogais por números e vice-versa.
-10. **techList**: Retorna uma lista (array de objetos) de acordo com o array e a string recebidos.
-11. **generatePhoneNumber**: Gera um número de telefone.
-12. **triangleCheck**: Verifica se é possível formar um triângulo.
-13. **hydrate**: Retorna a sugestão de quantos copos d'água devem ser consumidos.
+1. `compareTrue`: Utiliza o operador lógico `&&` para comparação de dois valores.
+2. `calcArea`: Calcula a área total de um triângulo.
+3. `splitSentence`: Divide uma frase de acordo com a quantidade de palavras.
+4. `concatName`: Retorna uma string que contém o último e primeiro itens (nesta sequência) de um array de strings.
+5. `footballPoints`: Calcula a quantidade de pontos em um campeonato de futebol.
+6. `highestCount`: Retorna o número de repetições do maior número de um array de números.
+7. `catAndMouse`: Verifica qual gato está mais perto do rato.
+8. `fizzBuzz`:  Retorna um array de strings de acordo com o array de números recebido.
+9. `encode` e `decode`: Codifica e decodifica uma frase, trocando vogais por números e vice-versa.
+10. `techList`: Retorna uma lista (array de objetos) de acordo com o array e a string recebidos.
+11. `generatePhoneNumber`: Gera um número de telefone.
+12. `triangleCheck`: Verifica se é possível formar um triângulo.
+13. `hydrate`: Retorna a sugestão de quantos copos d'água devem ser consumidos.
 
 <p align="right"><a href="#readme-top">Voltar ao topo</a></p>
 
